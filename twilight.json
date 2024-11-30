@@ -22,71 +22,168 @@
         "component-store-features",
         "component-youtube",
         "menu-images",
-        "filters",
-        "component-random-testimonials"
+        "filters"
     ],
     "settings": [
         {
-            "title": "الإعدادات العامة",
-            "id": "general",
-            "icon": "sicon-settings",
-            "fields": [
-                {
-                    "id": "header_is_sticky",
-                    "type": "boolean",
-                    "label": "تثبيت الهيدر",
-                    "default": true
-                },
-                {
-                    "id": "footer_is_dark",
-                    "type": "boolean",
-                    "label": "الفوتر داكن",
-                    "default": false
-                },
-                {
-                    "id": "topnav_is_dark",
-                    "type": "boolean",
-                    "label": "القائمة العلوية داكنة",
-                    "default": false
-                }
-            ]
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "وضع عمودي للمنتجات في مربع المنتجات الثابتة في الصفحة الرئيسية",
+            "description": "",
+            "id": "vertical_fixed_products",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false
         },
         {
-            "title": "الألوان",
-            "id": "colors",
-            "icon": "sicon-paint",
-            "fields": [
-                {
-                    "id": "primary_color",
-                    "type": "color",
-                    "label": "اللون الرئيسي",
-                    "default": "#3498db"
-                },
-                {
-                    "id": "secondary_color",
-                    "type": "color",
-                    "label": "اللون الثانوي",
-                    "default": "#2ecc71"
-                }
-            ]
+            "type": "boolean",
+            "id": "is_more_button_enabled",
+            "label": "عرض (زر الكل) في الصفحة الرئيسية",
+            "format": "switch"
         },
         {
-            "title": "الخطوط",
-            "id": "typography",
-            "icon": "sicon-text",
-            "fields": [
+            "type": "static",
+            "id": "static-line1",
+            "format": "line"
+        },
+        {
+            "type": "static",
+            "format": "title",
+            "id": "static-label2",
+            "value": "خيارات أعلى الصفحة",
+            "variant": "h6"
+        },
+        {
+            "id": "header_is_sticky",
+            "label": "تثبت القائمة الرئيسية أعلى الصفحة عند التمرير لأسفل",
+            "description": "يُنصح بالغاء تفعيلها في حالة وجود عناصر كثيرة في القائمة المنسدلة",
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "شريط علوي داكن",
+            "description": "",
+            "id": "topnav_is_dark",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": false
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "عرض روابط الصفحات الهامة في الشريط العلوي",
+            "description": "مثل صفحة الهبوط ، المدونة ،الصفحات التعريفية ",
+            "id": "important_links",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "type": "static",
+            "id": "static-line3",
+            "format": "line"
+        },
+        {
+            "type": "static",
+            "format": "title",
+            "id": "static-label4",
+            "value": "خيارات أسفل الصفحة",
+            "variant": "h6"
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "الوضع الداكن",
+            "description": "",
+            "id": "footer_is_dark",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": false
+        },
+        {
+            "type": "static",
+            "id": "static-line5",
+            "format": "line"
+        },
+        {
+            "type": "static",
+            "format": "title",
+            "id": "static-label6",
+            "value": "خيارات صفحة المنتج",
+            "variant": "h6"
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "تثبيت زر الإضافة والكمية أسفل شاشة الجوال",
+            "description": "",
+            "id": "sticky_add_to_cart",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "اظهار الوسوم",
+            "description": "",
+            "id": "show_tags",
+            "format": "switch",
+            "required": false,
+            "value": true,
+            "selected": true
+        },
+        {
+            "id": "slider_background_size",
+            "type": "items",
+            "format": "dropdown-list",
+            "label": "طريقة عرض الصور في سليدر صور المنتج",
+            "description": "",
+            "labelHTML": null,
+            "icon": "sicon-list",
+            "selected": [
                 {
-                    "id": "main_font",
-                    "type": "select",
-                    "label": "الخط الرئيسي",
-                    "options": [
-                        {"value": "DINNextLTArabic", "label": "دين نكست"},
-                        {"value": "Cairo", "label": "القاهرة"},
-                        {"value": "Tajawal", "label": "تجوال"}
-                    ],
-                    "default": "DINNextLTArabic"
+                    "label": "اظهار الصورة كاملةً في المنتصف (Contain)",
+                    "value": "contain",
+                    "key": "f4adec13-6e4c-433b-b141-b2807935ced9"
                 }
-            ]
+            ],
+            "options": [
+                {
+                    "label": "تغطية الصورة كامل المساحة مع المحافظة على النسبة الصورة (Cover)",
+                    "value": "cover",
+                    "key": "e9c8ea8f-c5c6-438e-9d45-3bce269afde4"
+                },
+                {
+                    "label": "اظهار الصورة كاملةً في المنتصف (Contain)",
+                    "value": "contain",
+                    "key": "f4adec13-6e4c-433b-b141-b2807935ced9"
+                }
+            ],
+            "source": "Manual",
+            "required": true
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
+            "label": "تكبير الصور في سليدر صور المنتج",
+            "description": "هذه الخاصية تمكنك من تكبير الصورة لتسهل رؤية المزيد من التفاصيل بها",
+            "id": "imageZoom",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false
         }
     ],
     "components": [
@@ -707,52 +804,6 @@
                             "maxLength": 255
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "key": "bdb1e2e1-9095-40fb-9b95-70cee1486c3b",
-            "title": "شريط  اخباري",
-            "icon": "sicon-fresh-arrival",
-            "path": "home.nees",
-            "fields": [
-                {
-                    "id": "color",
-                    "type": "string",
-                    "format": "color",
-                    "inputType": "color",
-                    "label": "Color",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-format-fill",
-                    "value": "#004956",
-                    "required": false
-                },
-                {
-                    "id": "icon_picker",
-                    "type": "string",
-                    "format": "icon",
-                    "label": "Icon Picker",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-user-circle",
-                    "value": "sicon-store",
-                    "required": false
-                },
-                {
-                    "id": "rich_text",
-                    "type": "string",
-                    "format": "richtext",
-                    "label": "Rich Text",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "Your text here ..",
-                    "icon": "sicon-touch-type",
-                    "value": null,
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": 60,
-                    "maxLength": 1000
                 }
             ]
         }

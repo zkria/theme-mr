@@ -49,32 +49,11 @@
   <div id="mainnav" class="main-nav-container shadow-default bg-white">
       <div class="inner bg-inherit">
           <div class="container">
-              {# News Ticker #}
-              <div class="news-ticker bg-primary/10 py-2 px-4 border-b">
-                  <div class="flex items-center">
-                      <span class="bg-primary text-white px-3 py-1 rounded-full text-sm">أخبار</span>
-                      <div class="overflow-hidden relative w-full">
-                          <div class="animate-ticker whitespace-nowrap">
-                              <span class="inline-block mx-4">🔥 خصم 20% على جميع المنتجات الرياضية</span>
-                              <span class="inline-block mx-4">🚚 شحن مجاني للطلبات فوق 500 ريال</span>
-                              <span class="inline-block mx-4">🎉 تخفيضات نهاية الموسم</span>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              {# Rest of the header content #}
               <div class="flex items-stretch justify-between relative">
-                  {# Right Section #}
-                  <div class="flex items-center lg:w-1/4">
+                  <div class="flex items-center">
                       <a class="lg:hidden mburger mburger--collapse leading-none rtl:ml-4 ltr:mr-4" href="#mobile-menu" aria-label="Open-menu">
                         <i class="sicon-menu text-primary text-2xl"></i>
                       </a>
-                      <custom-main-menu></custom-main-menu>
-                  </div>
-
-                  {# Center Logo #}
-                  <div class="flex items-center justify-center lg:w-1/2">
                       <a class="navbar-brand" href="{{ store.url }}">
                           <img fetchpriority="high" width="100%" height="100%" loading="eager" src="{{ store.logo }}" alt="{{ store.name }} logo">
                           {% if is_page('index') %}
@@ -83,15 +62,9 @@
                             <h2 class="sr-only">{{ store.name }}</h2>
                           {% endif %}
                       </a>
+                      <custom-main-menu></custom-main-menu>
                   </div>
-
-                  {# Left Section with Icons #}
-                  <div class="flex items-center justify-end lg:w-1/4 gap-4">
-                      {# Dark Mode Toggle #}
-                      <button class="header-btn" onclick="document.documentElement.classList.toggle('dark')" aria-label="toggle-dark-mode">
-                          <i class="header-btn__icon sicon-moon-stars dark:sicon-sun"></i>
-                      </button>
-
+                  <div class="flex items-center justify-end">
                       {% if user.type=='user' %}
                         <salla-user-menu avatar-only show-header></salla-user-menu>
                       {% else %}
@@ -99,8 +72,7 @@
                             <i class="header-btn__icon sicon-user-circle"></i>
                           </button>
                       {% endif %}
-                      
-                      <salla-cart-summary>
+                      <salla-cart-summary class="ml-4 rtl:ml-[unset] rtl:mr-4">
                         <i slot="icon" class="header-btn__icon icon sicon-shopping-bag"></i>
                       </salla-cart-summary>
                   </div>
