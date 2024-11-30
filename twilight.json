@@ -806,6 +806,13 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "bdb1e2e1-9095-40fb-9b95-70cee1486c3b",
+            "title": "شريط  اخباري",
+            "icon": "sicon-fresh-arrival",
+            "path": "home.nees",
+            "fields": []
         }
     ],
     "support_url": "https://salla.com/",
