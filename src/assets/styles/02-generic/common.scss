@@ -401,19 +401,3 @@ salla-modal {
     list-style: auto;
   } 
 }
-
-// تعريف الألوان للوضع الداكن
-:root {
-  --bg-color: #f9fafb; // لون الخلفية للوضع العادي
-  --text-color: #111827; // لون النص للوضع العادي
-}
-
-[data-theme='dark'] {
-  --bg-color: #1f2937; // لون الخلفية للوضع الداكن
-  --text-color: #f9fafb; // لون النص للوضع الداكن
-}
-
-body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-}

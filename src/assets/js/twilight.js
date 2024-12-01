@@ -21,10 +21,3 @@ import {applyPolyfills, defineCustomElements as SallaWebComponents} from '@salla
 applyPolyfills().then(() => {
     SallaWebComponents(window);
 });
-
-// إضافة كود لدعم الوضع الداكن
-const toggleDarkMode = () => {
-    document.body.classList.toggle('dark-mode');
-};
-
-document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);

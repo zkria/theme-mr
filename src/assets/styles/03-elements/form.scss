@@ -23,11 +23,6 @@ input[type="text"]:disabled {
   @apply w-full h-10 transition-colors duration-300 focus:ring-transparent focus:border-primary dark:focus:border-primary text-sm border-gray-200 dark:bg-gray-600 dark:border-gray-600 rounded-md;
   appearance: none;
   -webkit-appearance: none;
-
-  &.dark {
-    background-color: #2d2d2d;
-    color: #ffffff;
-  }
 }
 
 textarea.form-input {

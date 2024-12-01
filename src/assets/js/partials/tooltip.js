@@ -13,16 +13,6 @@ export default function toolTip() {
     element.classList.remove('visible');
   };
 
-  const toggleDarkMode = () => {
-    document.body.classList.toggle('dark-mode');
-  };
-
-  // إضافة حدث الزر لتفعيل الوضع الداكن
-  const darkModeButton = document.querySelector('.dark-mode-toggle');
-  if (darkModeButton) {
-    darkModeButton.addEventListener('click', toggleDarkMode);
-  }
-
   // Show the tooltip if the type is clickable
   if (tooltipToggleClick.length) {
     tooltipToggleClick.forEach((element) => {

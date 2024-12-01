@@ -137,13 +137,4 @@ export default class AppHelpers {
     this.element(element).classList.add(...Array.from(arguments).slice(1));
     return this;
   }
-
-  /**
-   * Toggle dark mode on the body element
-   * @return {AppHelpers}
-   */
-  toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    return this;
-  }
 }

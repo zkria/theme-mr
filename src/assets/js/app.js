@@ -32,11 +32,6 @@ class App extends AppHelpers {
     this.status = 'ready';
     document.dispatchEvent(new CustomEvent('theme::ready'));
     this.log('Theme Loaded 🎉');
-
-    const darkMode = localStorage.getItem('darkMode') === 'true';
-    if (darkMode) {
-      this.toggleDarkMode();
-    }
   }
 
   log(message) {
@@ -139,8 +134,6 @@ isElementLoaded(selector){
         timerProgressBar: true
       })
     });
-
-    this.onClick('#dark-mode-toggle', () => this.toggleDarkMode());
   }
 
 
@@ -335,12 +328,6 @@ isElementLoaded(selector){
     salla.cart.event.onItemAdded((response, prodId) => {
       app.element('salla-cart-summary').animateToCart(app.element(`#product-${prodId} img`));
     });
-  }
-
-  toggleDarkMode() {
-    document.body.classList.toggle('dark-mode');
-    const isDarkMode = document.body.classList.contains('dark-mode');
-    localStorage.setItem('darkMode', isDarkMode);
   }
 }
 

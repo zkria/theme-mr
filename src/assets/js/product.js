@@ -83,11 +83,6 @@ class Product extends BasePage {
         e.target.classList.add('is-expanded');
         div.style = `max-height:${div.scrollHeight}px`;
       }) || e.target.remove());
-
-      // إضافة حدث الزر لتبديل الوضع الداكن
-      app.onClick('#btn-toggle-dark-mode', () => {
-          document.body.classList.toggle('dark-mode');
-      });
     }
 }
 

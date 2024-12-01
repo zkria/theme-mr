@@ -36,9 +36,7 @@ class Wishlist extends BasePage {
         document.querySelectorAll('.btn--wishlist[data-id="' + id + '"]')
             .forEach(btn => {
                 app.toggleElementClassIf(btn, 'is-added', 'not-added', () => isAdded);
-                // إضافة دعم للوضع الداكن
-                const isDarkMode = document.body.classList.contains('dark-mode');
-                app.toggleElementClassIf(btn, 'dark-mode', 'light-mode', () => isDarkMode);
+                // app.toggleElementClassIf(btn, 'pulse', 'un-favorited', () => isAdded);
             });
     }
 }

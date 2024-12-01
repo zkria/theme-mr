@@ -1,3 +1,4 @@
+
 class WishlistCard extends HTMLElement {
 
     connectedCallback() {
@@ -11,7 +12,7 @@ class WishlistCard extends HTMLElement {
 
     render() {
         this.setAttribute('id', `wishlist-product-${this.product.id}`)
-        this.classList.add('product-entry', 'product-entry--wishlist', 'dark-mode')
+        this.classList.add('product-entry', 'product-entry--wishlist')
 
         this.innerHTML = `
         <div class="flex items-center mb-4 sm:mb-0">

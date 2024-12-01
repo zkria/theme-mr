@@ -46,20 +46,8 @@ class Cart extends BasePage {
                 /** @type HTMLSallaButtonElement */
                 let btn = event.currentTarget;
                 salla.config.get('user.type') == 'guest' ? salla.cart.submit() : btn.load().then(() => salla.cart.submit())
-                this.updateButtonStyle(btn);
             }
         });
-    }
-
-    updateButtonStyle(button) {
-        const isDarkMode = document.body.classList.contains('dark-mode');
-        if (isDarkMode) {
-            button.classList.add('btn-dark');
-            button.classList.remove('btn-light');
-        } else {
-            button.classList.add('btn-light');
-            button.classList.remove('btn-dark');
-        }
     }
 
     updateCartOptions(options) {

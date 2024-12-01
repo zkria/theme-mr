@@ -6,14 +6,6 @@ window.fslightbox = Lightbox;
 class Home extends BasePage {
     onReady() {
         this.initFeaturedTabs();
-        this.initDarkModeToggle();
-    }
-
-    initDarkModeToggle() {
-        const toggleButton = document.querySelector('#dark-mode-toggle');
-        toggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });
     }
 
     /**

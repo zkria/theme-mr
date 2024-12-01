@@ -8,12 +8,6 @@ class ThankYou extends BasePage {
             form.innerHTML = res.data.message;
             form.classList.add('sent');
         });
-
-        // إضافة دعم للوضع الداكن
-        const toggleDarkModeButton = document.querySelector('#toggle-dark-mode');
-        toggleDarkModeButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });
     }
 }
 

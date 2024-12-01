@@ -21,27 +21,4 @@
       }
     }
   }
-  &.dark-mode {
-    .with-arrow .sicon-keyboard_arrow_left:before,
-    nav .sicon-keyboard_arrow_left:before,
-    .sub-menu .has-children > a:after {
-        content: "\e96c";
-        color: #fff;
-    }
-    .flatpickr {
-      &-months {
-        .numInputWrapper {
-          .cur-year {
-            padding: 0 0 0 15px;
-            color: #fff;
-          }
-        }
-        [class^="arrow"] {
-          right: unset;
-          left: 0;
-          color: #fff;
-        }
-      }
-    }
-  }
 }

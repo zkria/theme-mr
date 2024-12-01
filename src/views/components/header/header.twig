@@ -65,9 +65,6 @@
                       <custom-main-menu></custom-main-menu>
                   </div>
                   <div class="flex items-center justify-end">
-                      <button class="header-btn ml-2" aria-label="dark-mode" onclick="toggleDarkMode()">
-                        <i class="header-btn__icon sicon-moon"></i>
-                      </button>
                       {% if user.type=='user' %}
                         <salla-user-menu avatar-only show-header></salla-user-menu>
                       {% else %}
@@ -75,7 +72,7 @@
                             <i class="header-btn__icon sicon-user-circle"></i>
                           </button>
                       {% endif %}
-                      <salla-cart-summary class="ml-2 rtl:ml-[unset] rtl:mr-4">
+                      <salla-cart-summary class="ml-4 rtl:ml-[unset] rtl:mr-4">
                         <i slot="icon" class="header-btn__icon icon sicon-shopping-bag"></i>
                       </salla-cart-summary>
                   </div>
