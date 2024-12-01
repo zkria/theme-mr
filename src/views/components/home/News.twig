@@ -1,8 +1,7 @@
-{# شريط إخباري احترافي #}
-<div class="news-ticker bg-gradient-to-r from-blue-500 to-purple-500 text-white text-center py-3 rounded-lg shadow-lg">
-    <marquee behavior="scroll" direction="left" scrollamount="5">
-        <p class="text-lg font-bold">
-            مرحبًا بكم في متجرنا! تحقق من العروض الجديدة والخصومات المذهلة!
-        </p>
-    </marquee>
+{% set newsText = component.fields.news_text.value %}
+{% set newsColor = component.fields.news_color.value %}
+{% set backgroundColor = component.fields.background_color.value %}
+
+<div style="background-color: {{ backgroundColor }}; color: {{ newsColor }}; padding: 10px;">
+    {{ newsText }}
 </div>
