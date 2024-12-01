@@ -609,14 +609,13 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .max-w-3xl{max-width:48rem}
 .max-w-full{max-width:100%}
 .max-w-lg{max-width:32rem}
+.max-w-md{max-width:28rem}
 .max-w-sm{max-width:24rem}
 .max-w-xs{max-width:20rem}
-.max-w-md{max-width:28rem}
 .flex-1{flex:1 1 0%}
 .flex-none{flex:none}
 .shrink-0{flex-shrink:0}
 .flex-grow{flex-grow:1}
-.basis-0{flex-basis:0px}
 .table-fixed{table-layout:fixed}
 .translate-y-0{--tw-translate-y:0px;transform:translate(var(--tw-translate-x), 0px) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
 .translate-y-3{--tw-translate-y:0.75rem;transform:translate(var(--tw-translate-x), 0.75rem) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
@@ -636,7 +635,6 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .items-end{align-items:flex-end}
 .items-center{align-items:center}
 .items-baseline{align-items:baseline}
-.items-stretch{align-items:stretch}
 .justify-start{justify-content:flex-start}
 .justify-end{justify-content:flex-end}
 .justify-center{justify-content:center}
@@ -699,7 +697,6 @@ select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/
 .bg-gray-200{--tw-bg-opacity:1;background-color:rgba(229, 231, 235, 1);background-color:rgba(229, 231, 235, var(--tw-bg-opacity, 1))}
 .bg-gray-50{--tw-bg-opacity:1;background-color:rgba(249, 250, 251, 1);background-color:rgba(249, 250, 251, var(--tw-bg-opacity, 1))}
 .bg-green-50{--tw-bg-opacity:1;background-color:rgba(240, 253, 244, 1);background-color:rgba(240, 253, 244, var(--tw-bg-opacity, 1))}
-.bg-inherit{background-color:inherit}
 .bg-primary{background-color:#414042;background-color:var(--color-primary)}
 .bg-white{--tw-bg-opacity:1;background-color:rgba(255, 255, 255, 1);background-color:rgba(255, 255, 255, var(--tw-bg-opacity, 1))}
 .bg-cover{background-size:cover}
@@ -6439,7 +6436,6 @@ lite-youtube.lyt-activated > .lty-playbtn {
 .ltr\:mr-1\.5:where([dir="ltr"], [dir="ltr"] *){margin-right:0.375rem}
 .ltr\:mr-2:where([dir="ltr"], [dir="ltr"] *){margin-right:0.5rem}
 .ltr\:mr-3:where([dir="ltr"], [dir="ltr"] *){margin-right:0.75rem}
-.ltr\:mr-4:where([dir="ltr"], [dir="ltr"] *){margin-right:1rem}
 .ltr\:mr-8:where([dir="ltr"], [dir="ltr"] *){margin-right:2rem}
 .ltr\:mr-auto:where([dir="ltr"], [dir="ltr"] *){margin-right:auto}
 .ltr\:rounded-l-none:where([dir="ltr"], [dir="ltr"] *){border-top-left-radius:0px;border-bottom-left-radius:0px}
@@ -6481,14 +6477,11 @@ lite-youtube.lyt-activated > .lty-playbtn {
 .rtl\:ml-1\.5:where([dir="rtl"], [dir="rtl"] *){margin-left:0.375rem}
 .rtl\:ml-2:where([dir="rtl"], [dir="rtl"] *){margin-left:0.5rem}
 .rtl\:ml-3:where([dir="rtl"], [dir="rtl"] *){margin-left:0.75rem}
-.rtl\:ml-4:where([dir="rtl"], [dir="rtl"] *){margin-left:1rem}
 .rtl\:ml-8:where([dir="rtl"], [dir="rtl"] *){margin-left:2rem}
-.rtl\:ml-\[unset\]:where([dir="rtl"], [dir="rtl"] *){margin-left:0;margin-left:initial}
 .rtl\:ml-auto:where([dir="rtl"], [dir="rtl"] *){margin-left:auto}
 .rtl\:mr-1:where([dir="rtl"], [dir="rtl"] *){margin-right:0.25rem}
 .rtl\:mr-2:where([dir="rtl"], [dir="rtl"] *){margin-right:0.5rem}
 .rtl\:mr-3:where([dir="rtl"], [dir="rtl"] *){margin-right:0.75rem}
-.rtl\:mr-4:where([dir="rtl"], [dir="rtl"] *){margin-right:1rem}
 .rtl\:-scale-x-100:where([dir="rtl"], [dir="rtl"] *){--tw-scale-x:-1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(-1) scaleY(var(--tw-scale-y));transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}
 .rtl\:space-x-reverse:where([dir="rtl"], [dir="rtl"] *) > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:1}
 .rtl\:rounded-l-none:where([dir="rtl"], [dir="rtl"] *){border-top-left-radius:0px;border-bottom-left-radius:0px}
