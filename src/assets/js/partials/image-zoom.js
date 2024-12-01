@@ -73,16 +73,3 @@ export function zoom(imgID, zoom) {
 		return { x: x, y: y };
 	}
 }
-
-// إضافة وظيفة لتغيير الوضع الداكن
-function toggleDarkMode() {
-    const body = document.body;
-    body.classList.toggle('dark-mode');
-    const glass = document.querySelector('.img-magnifier-glass');
-    if (glass) {
-        glass.classList.toggle('dark-mode');
-    }
-}
-
-// إضافة حدث للزر في الهيدر
-document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);

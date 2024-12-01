@@ -297,10 +297,6 @@ class ProductCard extends HTMLElement {
       if (this.product?.quantity && this.isSpecial) {
         this.initCircleBar();
       }
-
-      // إضافة دعم الوضع الداكن
-      const isDarkMode = document.body.classList.contains('dark-mode'); // تحقق مما إذا كان الوضع داكنًا
-      this.classList.toggle('dark', isDarkMode); // إضافة فئة 'dark' إذا كان الوضع داكنًا
     }
 }
 

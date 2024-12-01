@@ -59,10 +59,6 @@
           margin-right: 0.75rem;
         }
       }
-      @media (prefers-color-scheme: dark) {
-        background: var(--color-primary-dark);
-        color: var(--color-primary-light);
-      }
     }
   }
 }

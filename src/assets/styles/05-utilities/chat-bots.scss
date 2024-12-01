@@ -91,24 +91,3 @@ iframe.tawk-widget {
     }
   }
 }
-
-/* دعم الوضع الداكن */
-@media (prefers-color-scheme: dark) {
-  body.mm-ocd-opened,
-  body.modal-is-open,
-  body.fancybox-open {
-    background-color: #121212; // لون الخلفية الداكن
-    color: #ffffff; // لون النص
-  }
-
-  #tidio-chat,
-  [id^="gb-widget"],
-  [class$="__feedback"],
-  #fb-root,
-  .fb_reset,
-  #chat-widget-container {
-    display: block !important; // عرض العناصر في الوضع الداكن
-  }
-
-  // يمكنك إضافة المزيد من التعديلات حسب الحاجة
-}

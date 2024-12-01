@@ -131,17 +131,14 @@ salla-button {
   /* Button Variants */
   &--danger {
     @apply bg-red-400 text-white hover:opacity-80;
-    @apply dark:bg-red-600 dark:text-white;
   }
 
   &--primary {
     @apply text-primary-reverse border border-primary bg-primary;
-    @apply dark:text-primary-dark dark:bg-primary-dark;
   }
 
   &--outline-primary {
     @apply border border-primary text-primary hover:bg-primary hover:text-primary-reverse;
-    @apply dark:border-primary-dark dark:text-primary-dark dark:hover:bg-primary-dark dark:hover:text-primary-reverse;
   }
 
   &--outline {

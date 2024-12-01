@@ -1,21 +1,7 @@
-:root {
-  --background-color: #ffffff;
-  --text-color: #000000;
-}
-
-[data-theme='dark'] {
-  --background-color: #000000;
-  --text-color: #ffffff;
-}
-
 /*
   Block Title
 */
 .s-block{
-  @apply mt-8 sm:mt-16;
-  background-color: var(--background-color);
-  color: var(--text-color);
-
   &__title{
     @apply center-between mb-4 md:mb-8;
 
@@ -333,6 +319,8 @@
 
 
 .s-block {
+  @apply mt-8 sm:mt-16;
+
   &--full-bg{
     + footer,
     + .s-block--full-bg,

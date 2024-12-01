@@ -119,14 +119,8 @@ class NavigationMenu extends HTMLElement {
         <nav id="mobile-menu" class="mobile-menu">
             <ul class="main-menu">${this.getMenus()}</ul>
             <button class="btn--close close-mobile-menu sicon-cancel lg:hidden"></button>
-            <button id="toggle-dark-mode" class="btn--toggle-dark-mode">تبديل الوضع الداكن</button>
         </nav>
         <button class="btn--close-sm close-mobile-menu sicon-cancel hidden"></button>`;
-        
-        // إضافة حدث الزر لتبديل الوضع
-        document.getElementById('toggle-dark-mode').addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });
     }
 }
 

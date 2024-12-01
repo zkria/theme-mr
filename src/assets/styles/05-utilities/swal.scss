@@ -47,24 +47,24 @@
 			}
 
 			&.swal2-icon-error {
-				@apply bg-red-400 dark:bg-red-600;
+				@apply bg-red-400;
 
 				* {
 					@apply text-white;
 				}
 
 				.swal2-error {
-					@apply border-white dark:border-gray-800;
+					@apply border-white;
 				}
 
 				.swal2-x-mark-line-right,
 				.swal2-x-mark-line-left {
-					@apply bg-white dark:bg-gray-800;
+					@apply bg-white;
 				}
 			}
 
 			&.swal2-icon-success {
-				@apply bg-green-500 dark:bg-green-700;
+				@apply bg-green-500;
 
 				* {
 					@apply text-white;

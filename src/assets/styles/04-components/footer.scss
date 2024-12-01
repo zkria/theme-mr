@@ -1,3 +1,4 @@
+
 .store-footer {
   @apply relative bg-darker text-white mt-8 sm:mt-16;
 
@@ -38,22 +39,6 @@
 
     .contact-social{
       @apply border-gray-100;
-    }
-  }
-
-  .footer-is-dark & {
-    @apply bg-gray-900 text-gray-300;
-
-    .store-footer__inner {
-      @apply bg-gray-800 border-b-gray-700;
-    }
-
-    .social-link {
-      @apply border-gray-600;
-    }
-
-    .contact-social {
-      @apply border-gray-700;
     }
   }
 }
