@@ -807,6 +807,13 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "1e2b12e5-67b2-41d1-bc4d-2e21de6794ce",
+            "title": "News tape",
+            "icon": "sicon-fresh-arrival",
+            "path": "home.News",
+            "fields": []
         }
     ],
     "support_url": "https://salla.com/",
