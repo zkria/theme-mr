@@ -806,41 +806,6 @@
                     ]
                 }
             ]
-        },
-        {
-            "key": "9ad0eb13-afce-4f12-90f6-a090f943e82e",
-            "title": "شريط  اخباري",
-            "icon": "sicon-fresh-arrival",
-            "path": "home.News",
-            "fields": [
-                {
-                    "id": "color",
-                    "type": "string",
-                    "format": "color",
-                    "inputType": "color",
-                    "label": "Color",
-                    "description": null,
-                    "labelHTML": null,
-                    "icon": "sicon-format-fill",
-                    "value": "#004956",
-                    "required": false
-                },
-                {
-                    "id": "rich_text",
-                    "type": "string",
-                    "format": "richtext",
-                    "label": "Rich Text",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "Your text here ..",
-                    "icon": "sicon-touch-type",
-                    "value": null,
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": 60,
-                    "maxLength": 1000
-                }
-            ]
         }
     ],
     "support_url": "https://salla.com/",
