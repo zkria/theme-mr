@@ -811,7 +811,7 @@
             "key": "9ad0eb13-afce-4f12-90f6-a090f943e82e",
             "title": "News tape",
             "icon": "sicon-fresh-arrival",
-            "path": "home.nees",
+            "path": "home.News",
             "fields": [
                 {
                     "id": "color",
