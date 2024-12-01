@@ -812,7 +812,57 @@
             "title": "News tape",
             "icon": "sicon-fresh-arrival",
             "path": "home.nees",
-            "fields": []
+            "fields": [
+                {
+                    "id": "color",
+                    "type": "string",
+                    "format": "color",
+                    "inputType": "color",
+                    "label": "Color",
+                    "description": null,
+                    "labelHTML": null,
+                    "icon": "sicon-format-fill",
+                    "value": "#004956",
+                    "required": false
+                },
+                {
+                    "id": "rich_text",
+                    "type": "string",
+                    "format": "richtext",
+                    "label": "Rich Text",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Your text here ..",
+                    "icon": "sicon-touch-type",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 60,
+                    "maxLength": 1000
+                },
+                {
+                    "id": "text_area",
+                    "type": "string",
+                    "format": "textarea",
+                    "label": "Text Area",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Your text here",
+                    "icon": "sicon-typography",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 20,
+                    "maxLength": 255
+                },
+                {
+                    "id": "line",
+                    "type": "static",
+                    "format": "line",
+                    "label": "Line",
+                    "icon": "sicon-minus"
+                }
+            ]
         }
     ],
     "support_url": "https://salla.com/",
