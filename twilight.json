@@ -813,7 +813,35 @@
             "title": "News tape",
             "icon": "sicon-fresh-arrival",
             "path": "home.News",
-            "fields": []
+            "fields": [
+                {
+                    "id": "allon",
+                    "type": "string",
+                    "format": "color",
+                    "inputType": "color",
+                    "label": "اللون",
+                    "description": "لون",
+                    "labelHTML": null,
+                    "icon": "sicon-format-fill",
+                    "value": "#004956",
+                    "required": false
+                },
+                {
+                    "id": "alns",
+                    "type": "string",
+                    "format": "textarea",
+                    "label": "النص",
+                    "description": null,
+                    "labelHTML": null,
+                    "placeholder": "Your text here",
+                    "icon": "sicon-typography",
+                    "value": null,
+                    "multilanguage": false,
+                    "required": false,
+                    "minLength": 20,
+                    "maxLength": 255
+                }
+            ]
         }
     ],
     "support_url": "https://salla.com/",
