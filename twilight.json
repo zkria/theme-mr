@@ -806,6 +806,13 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "b8383d24-1691-4fa7-a8d0-e574979c0ae8",
+            "title": "شريط  اخباري",
+            "icon": "sicon-keyboard_arrow_right",
+            "path": "home.News",
+            "fields": []
         }
     ],
     "support_url": "https://salla.com/",
