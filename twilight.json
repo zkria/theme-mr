@@ -806,6 +806,13 @@
                     ]
                 }
             ]
+        },
+        {
+            "key": "cc27c491-4454-45ac-bf38-0887919fb38a",
+            "title": "شريط  اخباري",
+            "icon": "sicon-fresh-arrival",
+            "path": "home.News",
+            "fields": []
         }
     ],
     "support_url": "https://salla.com/",
