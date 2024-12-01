@@ -42,6 +42,7 @@ class Blog extends BasePage {
                     this.handleExistingLike(likeBtn, blogId);
                 }
             }
+            this.toggleDarkMode();
         });
     }
 
@@ -82,6 +83,11 @@ class Blog extends BasePage {
             duration: 300,
             easing: 'easeInOutQuad',
         });
+    }
+
+    toggleDarkMode() {
+        const body = document.body;
+        body.classList.toggle('dark-mode');
     }
 }
 

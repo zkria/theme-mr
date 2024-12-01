@@ -1,9 +1,25 @@
 class BasePage {
   constructor() {
+    this.isDarkMode = false;
   }
 
   onReady() {
-    //
+    this.setupDarkModeToggle();
+  }
+
+  setupDarkModeToggle() {
+    const toggleButton = document.getElementById('dark-mode-toggle');
+    if (toggleButton) {
+      toggleButton.addEventListener('click', () => {
+        this.toggleDarkMode();
+      });
+    }
+  }
+
+  toggleDarkMode() {
+    this.isDarkMode = !this.isDarkMode;
+    document.body.classList.toggle('dark-mode', this.isDarkMode);
+    app.log(`Dark mode is now ${this.isDarkMode ? 'enabled' : 'disabled'}.`);
   }
 
   registerEvents() {

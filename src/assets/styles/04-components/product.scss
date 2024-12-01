@@ -400,3 +400,33 @@ salla-quantity-input[max='1']{
     @apply cursor-not-allowed
   }
 }
+
+// دعم الوضع الداكن
+@media (prefers-color-scheme: dark) {
+  .product-entry {
+    @apply bg-gray-800; // تغيير لون الخلفية
+    // يمكنك إضافة المزيد من التعديلات هنا
+  }
+
+  .s-comments {
+    &-product {
+      @apply bg-gray-900; // تغيير لون الخلفية
+    }
+  }
+
+  .share-btns-list {
+    @apply bg-gray-700; // تغيير لون الخلفية
+  }
+
+  .cart-item {
+    @apply bg-gray-800; // تغيير لون الخلفية
+  }
+
+  .s-product-card {
+    &-promotion-title {
+      @apply bg-red-700; // تغيير لون الخلفية
+    }
+  }
+
+  // أضف المزيد من القواعد حسب الحاجة
+}

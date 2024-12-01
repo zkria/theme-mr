@@ -36,6 +36,29 @@ class Loyalty extends BasePage {
                 return i * 100;
             },
         }, '-=3200')
+
+        // إضافة حدث الزر لتغيير الوضع
+        const toggleButton = document.querySelector('.toggle-dark-mode');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+            this.updateAnimationsForDarkMode();
+        });
+    }
+
+    updateAnimationsForDarkMode() {
+        // تحديث الأنماط بناءً على الوضع الداكن
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        const targetElements = document.querySelectorAll('.loyality-item, .star-anime, .btn-anime');
+
+        targetElements.forEach(el => {
+            if (isDarkMode) {
+                el.style.backgroundColor = '#333'; // لون الخلفية للوضع الداكن
+                el.style.color = '#fff'; // لون النص للوضع الداكن
+            } else {
+                el.style.backgroundColor = '#fff'; // لون الخلفية للوضع العادي
+                el.style.color = '#000'; // لون النص للوضع العادي
+            }
+        });
     }
 }
 

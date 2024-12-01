@@ -1,7 +1,7 @@
 
 // Main Menu
 .main-menu > li > a[href*="offer"]{
-  @apply text-red-800
+  @apply text-red-800 dark:text-red-400
 }
 
 @media only screen and (min-width: 1024px) {
@@ -35,7 +35,7 @@
       li a:hover,
       .has-children:hover > a{
         color: var(--color-primary);
-        @apply bg-gray-200/20;
+        @apply bg-gray-200/20 dark:bg-gray-700;
       }
 
       > a:after{
@@ -57,7 +57,7 @@
     }
 
     .sub-menu {
-      @apply z-20 transition opacity-0 invisible absolute bg-white -translate-y-3 shadow-default rounded-b-md border-t border-gray-300/30;
+      @apply z-20 transition opacity-0 invisible absolute bg-white dark:bg-gray-800 -translate-y-3 shadow-default rounded-b-md border-t border-gray-300/30;
 
       .sub-menu {
         top: -1px;
@@ -144,6 +144,7 @@
   .mm-spn.mm-spn--light {
     color: #000;
     background: #ffffff;
+    @apply dark:text-white dark:bg-gray-800;
   }
 
   .mm-spn {

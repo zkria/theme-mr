@@ -17,12 +17,13 @@
         vertical-align: middle;
         cursor: pointer;
         border-radius: 6px;
-        border: 2px solid #ffffff;
+        border: 2px solid var(--border-color, #ffffff);
         background-repeat: no-repeat;
         background-position: center;
         text-align: center;
         line-height: 40px;
         box-shadow: 0 1px 3px 0 rgba(#000, 0.075);
+        background-color: var(--background-color, #ffffff);
 
         &::after {
           opacity: 0;
@@ -38,7 +39,7 @@
           line-height: 1;
           -webkit-font-smoothing: antialiased;
           content: "\ea9d";
-          color: #fff;
+          color: var(--icon-color, #fff);
           font-size: 20px;
           font-weight: bold;
         }
@@ -65,7 +66,7 @@
           display: inline-flex;
           justify-content: center;
           align-items: center;
-          background-color: #ddd;
+          background-color: var(--span-background-color, #ddd);
 
           &::after {
             content: "";
@@ -104,5 +105,21 @@
         }
       }
     }
+  }
+}
+
+:root {
+  --background-color: #ffffff;
+  --border-color: #ffffff;
+  --span-background-color: #ddd;
+  --icon-color: #fff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #2b2d34;
+    --border-color: #444;
+    --span-background-color: #555;
+    --icon-color: #fff;
   }
 }

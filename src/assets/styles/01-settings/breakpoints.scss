@@ -28,3 +28,10 @@
     @content;
   }
 }
+
+// إضافة دعم للوضع الداكن
+@mixin dark-mode {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}

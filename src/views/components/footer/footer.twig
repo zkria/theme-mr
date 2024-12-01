@@ -1,12 +1,12 @@
-<footer class="store-footer">
+<footer class="store-footer dark:bg-gray-800">
 	<div aria-label="footer" class="store-footer__inner">
 		<div class="container grid grid-col-1 lg:grid-cols-6 gap-8 lg:gap-6">
 			<div class="lg:col-span-2 rtl:lg:pl-20 ltr:lg:pr-20">
 				<a href="{{ link('/') }}" class="flex items-center m-0">
-					<h3>{{store.name}}</h3>
+					<h3 class="text-white">{{store.name}}</h3>
 				</a>
 				{% if store.description %}
-					<p class="max-w-sm leading-6 mb-6">
+					<p class="max-w-sm leading-6 mb-6 text-gray-300">
 						{{ store.description|raw }}
 					</p>
 				{% endif %}
@@ -25,7 +25,7 @@
               {% endif %}
               <div>
                 <p class="text-sm text-text-grey mb-1">{{ trans('common.elements.tax_number') }}</p>
-                <b class="text-sm">{{ store.settings.tax.number }}</b>
+                <b class="text-sm text-white">{{ store.settings.tax.number }}</b>
               </div>
             </div>
 
@@ -43,7 +43,7 @@
         </div>
 
 			<div>
-				<h3>{{ trans('blocks.footer.pages_links') }}</h3>
+				<h3 class="text-white">{{ trans('blocks.footer.pages_links') }}</h3>
 				<salla-menu source="footer"></salla-menu>
 			</div>
 
@@ -61,7 +61,7 @@
 	</div>
 
 	<div class="md:flex items-center justify-between py-4 container text-center">
-		<span class="text-sm copyright-text">{% hook copyright %}</span>
+		<span class="text-sm copyright-text text-gray-300">{% hook copyright %}</span>
 		<salla-payments></salla-payments>
 	</div>
 </div>

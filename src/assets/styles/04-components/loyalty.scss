@@ -1,5 +1,17 @@
+:root {
+  --text-color: #ffffff; // اللون للنص في الوضع العادي
+  --background-color: #ffffff; // لون الخلفية في الوضع العادي
+}
+
+[data-theme='dark'] {
+  --text-color: #ffffff; // اللون للنص في الوضع الداكن
+  --background-color: #1a1a1a; // لون الخلفية في الوضع الداكن
+}
 
 .loyalty{
+  background-color: var(--background-color); // استخدام متغير الخلفية
+  color: var(--text-color); // استخدام متغير النص
+
   .breadcrumbs {
     @apply pb-0 pt-4;
 
@@ -12,6 +24,7 @@
     .arrow {
       @apply text-white/90;
       text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+      color: var(--text-color); // استخدام متغير النص
     }
   }
 
@@ -30,10 +43,12 @@
 
         h1{
           @apply font-bold text-3xl mb-2.5;
+          color: var(--text-color); // استخدام متغير النص
         }
 
         p{
           @apply text-gray-500 max-w-xs leading-6 mb-2;
+          color: var(--text-color); // استخدام متغير النص
         }
       }
     }

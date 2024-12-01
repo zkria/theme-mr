@@ -3,6 +3,11 @@ body {
     .btn--add-to-cart {
       padding-top: 0 !important;
       padding-bottom: 0 !important;
+
+      &.dark-mode {
+        background-color: #333;
+        color: #fff;
+      }
     }
   }
 }

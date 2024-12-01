@@ -26,6 +26,11 @@ class Products extends BasePage {
 
 
         this.initiateMobileMenu()
+
+        // إضافة حدث الزر لتبديل الوضع الداكن
+        app.element('#dark-mode-toggle').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
     }
 
     initiateMobileMenu() {

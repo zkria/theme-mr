@@ -13,6 +13,11 @@ class Order extends BasePage {
             .then(() => window.location.reload())
             .catch(() => btn.stop() && app.element('#modal-order-cancel').hide())
         );
+
+        // إضافة دعم للوضع الداكن
+        app.onClick('salla-button#toggle-dark-mode', () => {
+            document.body.classList.toggle('dark-mode');
+        });
     }
 }
 

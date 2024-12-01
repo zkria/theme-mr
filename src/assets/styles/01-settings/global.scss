@@ -7,7 +7,7 @@ $main-text-color: var(--main-text-color);
 :root {
   --infinte-color: #c9c9c9;
   --main-text-color: #231f1e;
-  --main-text-color-dark: #2b2d34;
+  --main-text-color-dark: #ffffff;
 
   /* current */
   --color-primary: #5cd5c4;
@@ -26,4 +26,9 @@ $main-text-color: var(--main-text-color);
 
   /* plugins */
   --mm-ocd-width: calc(100% - 51px);
+
+  /* الوضع الداكن */
+  --color-primary-dark: #1a1a1a; // لون أساسي للوضع الداكن
+  --main-text-color-dark: #ffffff; // لون النص للوضع الداكن
+  --bg-dark: #121212; // لون الخلفية للوضع الداكن
 }

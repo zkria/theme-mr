@@ -1,6 +1,9 @@
-@mixin flexable($align: center, $justify: center, $direction: row) {
+@mixin flexable($align: center, $justify: center, $direction: row, $dark-mode: false) {
   display: flex;
   align-items: $align;
   justify-content: $justify;
   flex-direction: $direction;
+
+  background-color: if($dark-mode, #333, #fff);
+  color: if($dark-mode, #fff, #000);
 }

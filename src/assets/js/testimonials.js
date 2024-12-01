@@ -16,6 +16,12 @@ class Testimonials extends BasePage {
             await commentsList.reload();
             commentsList.setAttribute('sort', event.currentTarget.value)
         });
+
+        // إضافة دعم للوضع الداكن
+        const toggleDarkModeButton = app.element('#toggle-dark-mode');
+        toggleDarkModeButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
     }
 }
 

@@ -23,6 +23,8 @@
 .profile-header {
   @apply relative lg:h-48 overflow-hidden;
 
+  @apply bg-gray-800 text-white;
+
   .breadcrumbs {
     @screen lg {
       @apply mt-2.5;
@@ -82,6 +84,8 @@
 */
 .thankyou-block{
   @apply duration-500 hover:shadow-default flex-1 bg-white p-8 rounded-md mb-6 md:mb-8 flex flex-col items-center justify-center;
+
+  @apply dark:bg-gray-800 dark:text-white;
 
   &.sent{
     @apply text-green-500 font-bold;

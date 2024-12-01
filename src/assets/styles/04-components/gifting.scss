@@ -9,6 +9,16 @@
     .s-gifting-filepond-placeholder-icon svg{
         fill: #ccc !important;
     }
+
+    @media (prefers-color-scheme: dark) {
+        .s-checkbox {
+            background-color: #333 !important;
+            border: 1px solid #666 !important;
+        }
+        .s-gifting-filepond-placeholder-icon svg {
+            fill: #aaa !important;
+        }
+    }
 }
 .s-gifting-widget .s-list-tile-item{
     @apply border-none rounded-t-none;
