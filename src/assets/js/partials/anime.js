@@ -9,6 +9,7 @@ class Anime {
             opacity : [0, 1],
             delay   : (el, i) => i * 100,
             duration: 2000,
+            backgroundColor: '#fff',
         };
         this.setOptions(options);
     }
@@ -138,9 +139,19 @@ class Anime {
     }
 
     /**
+     * @param color
+     * @return {Anime}
+     */
+    backgroundColor(color) {
+        return this.set('backgroundColor', color);
+    }
+
+    /**
      * @return {{}}
      */
     play() {
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        this.backgroundColor(isDarkMode ? '#333' : '#fff');
         return AnimeJS(this.options);
     }
 }

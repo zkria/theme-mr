@@ -12,7 +12,9 @@
     "production": "webpack --mode production",
     "prod": "webpack --mode production",
     "development": "webpack --mode development",
-    "watch": "webpack --mode development --watch"
+    "watch": "webpack --mode development --watch",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
   "author": "Salla",
   "dependencies": {
@@ -47,6 +49,8 @@
     "sass-loader": "^13.2.0",
     "tailwindcss": "^3.3.3",
     "webpack": "^5.64.1",
-    "webpack-cli": "^5.0.1"
+    "webpack-cli": "^5.0.1",
+    "eslint": "^8.0.0",
+    "prettier": "^2.5.0"
   }
 }

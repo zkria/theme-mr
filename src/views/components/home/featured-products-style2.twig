@@ -45,7 +45,7 @@
                     <salla-products-list  
                       source="selected" 
                       source-value="[{{ section.products|map((product) => product.id)|join(',') }}]"
-                      {{is_vertical ? '' : 'horizontal-cards'}}
+                      {{ is_vertical ? '' : 'horizontal-cards' }}
                       >
                     </salla-products-list>
                 {% endif %}

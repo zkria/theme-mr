@@ -29,6 +29,17 @@
         {
             "type": "boolean",
             "icon": "sicon-toggle-off",
+            "label": "الوضع الداكن",
+            "description": "تفعيل الوضع الداكن على جميع الصفحات.",
+            "id": "dark_mode",
+            "format": "switch",
+            "required": false,
+            "value": false,
+            "selected": false
+        },
+        {
+            "type": "boolean",
+            "icon": "sicon-toggle-off",
             "label": "وضع عمودي للمنتجات في مربع المنتجات الثابتة في الصفحة الرئيسية",
             "description": "",
             "id": "vertical_fixed_products",
@@ -271,7 +282,7 @@
                     "type": "static",
                     "format": "description",
                     "id": "with-bg",
-                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة العنصر</h6><img class='w-full' src='https://cdn.salla.network/images/themes/raed/main-links-with-bg.jpg?v=1.1'></div>",
+                    "value": "<div style='padding-top:10px;margin-bottom:30px;border:1px solid #ebebeb;border-radius:5px;text-align:center;overflow:hidden'><h6 style='margin-bottom:10px'>معاينة النصر</h6><img class='w-full' src='https://cdn.salla.network/images/themes/raed/main-links-with-bg.jpg?v=1.1'></div>",
                     "conditions": [
                         {
                             "id": "merge_with_top_component",
@@ -705,7 +716,7 @@
                             "format": "image",
                             "required": true,
                             "placeholder": "",
-                            "description": "* المقاس المناسب للصورة هو 640×427 بكسل",
+                            "description": "* المقاس ال��ناسب للصورة هو 640×427 بكسل",
                             "settings": {
                                 "height": 427,
                                 "width": 640

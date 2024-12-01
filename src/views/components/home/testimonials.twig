@@ -7,5 +7,9 @@
 | hide_customer_info | bool                      | show/hide info customers            |
 #}
 <section class="s-block s-block--testimonials container overflow-hidden">
-    <salla-reviews {{ display_all_url ? "display-all-link" : "" }} limit="{{ limit }}" sort="{{ sort }}" {{ hide_customer_info ? 'hide-customer-info' : '' }} type="{{type}}"></salla-reviews>
+    {% if limit is not empty and type is not empty %}
+        <salla-reviews {{ display_all_url ? "display-all-link" : "" }} limit="{{ limit }}" sort="{{ sort }}" {{ hide_customer_info ? 'hide-customer-info' : '' }} type="{{ type }}"></salla-reviews>
+    {% else %}
+        <p>يرجى تحديد جميع المتغيرات المطلوبة.</p>
+    {% endif %}
 </section> 

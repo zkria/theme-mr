@@ -10,9 +10,9 @@
 <section class="s-block s-block--features container">
     <div class="grid grid-cols-[repeat(2,minmax(0,1fr))] md:grid-cols-[repeat(3,minmax(0,1fr))] gap-4 sm:gap-6 xl:gap-8">
       {% for item in items %}
-          <div class="s-block--features__item">
+          <div class="s-block--features__item" aria-label="{{ item.title }}">
             <div class="feature-icon">
-              <i class="{{ item.icon }}"></i>
+              <i class="{{ item.icon }}" aria-hidden="true"></i>
             </div>
             <h2>{{ item.title }}</h2>
             <p>{{ item.text }}</p>

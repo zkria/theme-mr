@@ -29,8 +29,8 @@
               source="selected" 
               source-value="[{{ component.products|map((product) => product.id)|join(',') }}]" 
             {% endif %}
-            {% if display_all != '' and  display_all != '#' %}
-                display-all-url="{{display_all}}" 
+            {% if display_all %}
+                display-all-url="{{ display_all }}" 
             {% endif %}
             block-title=" " 
             slider-id="slider-with-bg-{{ position }}"

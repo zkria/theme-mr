@@ -14,10 +14,11 @@
             limit="{{ limit }}"
             autoplay
             source-value="[{{ products|map((product) => product.id)|join(',') }}]"
-            display-all-url="{{display_all_url}}"
+            display-all-url="{{ display_all_url }}"
             block-title="{{ title }}"
             block-subTitle="{{ sub_title|raw }}"
             slider-id="slider-with-bg-{{ position }}"
+            {{ edit_1 }}
     ></salla-products-slider>
   {% endif %}
 </section>

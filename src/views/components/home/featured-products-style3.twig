@@ -30,6 +30,7 @@
                             {% endfor %}
                         </div>
                     {% else %}
+                        {# استخدام نفس الكود لعرض المنتجات بدون المنتج المميز #}
                         {% for product in section.products %}
                             <custom-salla-product-card shadow-on-hover product="{{product}}" minimal></custom-salla-product-card>
                         {% endfor %}
