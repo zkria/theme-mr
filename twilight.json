@@ -839,28 +839,6 @@
                     "required": false,
                     "minLength": 60,
                     "maxLength": 1000
-                },
-                {
-                    "id": "text_area",
-                    "type": "string",
-                    "format": "textarea",
-                    "label": "Text Area",
-                    "description": null,
-                    "labelHTML": null,
-                    "placeholder": "Your text here",
-                    "icon": "sicon-typography",
-                    "value": null,
-                    "multilanguage": false,
-                    "required": false,
-                    "minLength": 20,
-                    "maxLength": 255
-                },
-                {
-                    "id": "line",
-                    "type": "static",
-                    "format": "line",
-                    "label": "Line",
-                    "icon": "sicon-minus"
                 }
             ]
         }
